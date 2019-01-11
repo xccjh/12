@@ -1,0 +1,49 @@
+// µÇÂ¼Ò³Ãæ¿ªÊ¼
+window.onload=function () {
+    ktzc.onclick=function () {
+       zc.className="passContent loginBox active";
+       dl.className="passContent loginBox";
+       ktzc.className="fr active";
+       ktdl.className="fl";
+    }
+    ktdl.onclick=function () {
+       zc.className="passContent loginBox";
+       dl.className="passContent loginBox active";
+       ktzc.className="fr";
+       ktdl.className="fl active";
+
+    }
+    var gd=false;
+    more.onclick=function () {
+        if (!gd) {
+            moresh.style.display = 'block';
+            tp.style.backgroundPosition="-50px -252px";
+            gd=!gd;
+        }else {
+            moresh.style.display = 'none';
+            tp.style.backgroundPosition="-101px -252px";
+            gd=!gd;
+        }
+
+    }
+    zjdl.onclick=function () {
+       zc.className="passContent loginBox";
+       dl.className="passContent loginBox active";
+       ktzc.className="fr";
+       ktdl.className="fl active";
+       contains('1111');
+    }
+    dldl.onclick=function () {
+       zc.className="passContent loginBox";
+       dl.className="passContent loginBox active";
+       ktzc.className="fr";
+       ktdl.className="fl active";
+    }
+    mp.onclick=function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+    hrefs.onclick=function () {
+            location.href="index.html";
+    }
+}

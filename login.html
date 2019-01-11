@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        电影网 - 登录
+    </title>
+    <link href="./css/login-base.css" rel="stylesheet" type="text/css">
+    <link href="./css/login.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+    <!-- 页头 -->
+    <div class="head-logo">
+        <h1>
+                <a class="fl" href="index.html" title="电影网">
+                            电影网
+                </a>
+                <span class="nav-header active" id="dldl" style="cursor: pointer">
+                            登录
+                </span>
+                <span class="nav-header">
+                            注册
+                </span>
+            </h1>
+    </div>
+    <!-- 登录注册容器 -->
+    <div class="pass-wrapper">
+        <div class="pass-inner clearfix" id="hrefs">
+            <div class="passBox hierarchy" id="mp">
+                <!-- 框头 -->
+                <ul class="tag">
+                    <li class="fl active" id="ktdl" >
+                        登录
+                    </li>
+                    <li class="fr " id="ktzc">
+                        注册电影网账号
+                    </li>
+                </ul>
+                <!-- 登录框 -->
+                <div class="passContent loginBox active" id="dl">
+                    <div class="span8">
+                        <form id="login" method="get" name="login">
+                            <ul class="list">
+                                <li class="normal">
+                                    <input autocomplete="off" class="input username" id="mail_sug" name="username" placeholder="邮箱/手机号/用户名" type="text">
+                                    </input>
+                                </li>
+                                <li class="normal passwordBox">
+                                    <input class="input password original" name="password" placeholder="请输入密码" type="password">
+                                    </input>
+                                </li>
+                                <li class="normal">
+                                    <input class="input loginCode vcode" id="code" name="seccode" placeholder="验证码" type="text">
+                                    <span class="vcodeImg">
+                                                        <img height="38" id="img_login_code" src="./images/saved_resource" width="118"/>
+                                                    </span>
+                                    </input>
+                                </li>
+                                <li style="cursor: pointer" id="dlt">
+                                    <input class="submit" name="btn_login" type="button" value="登录"/>
+                                </li>
+                                <li>
+                                    <span class="remember">
+                                                    <input class="acceptIpt" id="rememberme" name="rememberme" type="checkbox">
+                                                        <span class="c-fl">
+                                                                    密码记住
+                                                        </span>
+                                    <a class="c-fr text-link fr" href="#">
+                                                                    忘记密码
+                                                        </a>
+                                    </input>
+                                    </span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <!-- 注册框 -->
+                <div class="passContent registerBox" id="zc">
+                    <div class="span8">
+                        <form action=" id=" form_reg" method="get" name="form_reg">
+                            <input name="sid" type="hidden" value="">
+                            <ul class="list">
+                                <li class="normal">
+                                    <input autocomplete="off" class="input emailormobile" id="mail_reg" name="emailormobile" placeholder="请输入邮箱或手机号" type="text">
+                                    </input>
+                                </li>
+                                <li class="normal">
+                                    <input class="input password aaaa" name="password" placeholder="8~16个字符,包含字母、数字、符号2种组合" type="password">
+                                    </input>
+                                </li>
+                                <li class="normal">
+                                    <input class="input registerCode vcode" name="seccode" placeholder="验证码" type="text">
+                                    <span class="vcodeImg">
+                                                        <img height="38" id="img_reg_code" src="../images/saved_resource" width="118"/>
+                                                    </span>
+                                    </input>
+                                </li>
+                                <li class="normal" id="smsCode">
+                                    <input class="input mobilecode" name="mobilecode" placeholder="短信验证码" type="text">
+                                    <input class="code-btn" id="issuedSMS" type="button" value="获取手机验证码" />
+                                    </input>
+                                </li>
+                                <li class="normal accept">
+                                    <span class="agreement">
+                                                    <input checked="checked" class="agree acceptIpt fl" data-type="true" name="rememberme" type="checkbox">
+                                                        <span class="fl pr05">
+                                                                    同意
+                                                        </span>
+                                    <a class="text-link fl" href="#www.1905.com/about/service/">
+                                                                    电影网服务协议
+                                                        </a>
+                                    </input>
+                                    </span>
+                                </li>
+                                <li class="reg-submit">
+                                    <input class="submit" name="btn_register" type="button" value="注册" />
+                                </li>
+                            </ul>
+                            </input>
+                        </form>
+                        <div class="login mar-login">
+                            <span>账号已有</span>
+                            <a href="javascript:void(0)" class="text-link" id="zjdl">直接登录</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 合作伙伴 -->
+                <div class="span4">
+                    <p class="count">
+                        <span>
+                                        使用合作账号注册
+                            </span>
+                    </p>
+                    <dl>
+                        <dd class="fl">
+                            <a class="weixin" data-login="Weixin" href="javascript:;">
+                                    <i class="icons">
+                                    </i>
+                                    <span class="">
+                                                微信
+                                    </span>
+                                </a>
+                            <a class="qq" data-login="Qq" href="javascript:;">
+                                    <i class="icons">
+                                    </i>
+                                    <span class="">
+                                                QQ
+                                    </span>
+                                </a>
+                            <a class="sina" data-login="Sina" href="javascript:;">
+                                    <i class="icons">
+                                    </i>
+                                    <span class="">
+                                                微博
+                                    </span>
+                                </a>
+                            <a class="more-link-toggle more" href="javascript:;" id="more">
+                                    <i class="icons" id="tp">
+                                    </i>
+                                    <span class="more-link-text" >
+                                                更多
+                                    </span>
+                                </a>
+                        </dd>
+                    </dl>
+                    <dl class="link-area hide" id="moresh">
+                        <dd class="f1">
+                            <a class="alipay" data-login="Alipay" href="javascript:;">
+                                    <i class="icons">
+                                    </i>
+                                    <span class="">
+                                                支付宝
+                                    </span>
+                                </a>
+                            <a class="baidu" data-login="Baidu" href="javascript:;">
+                                    <i class="icons">
+                                    </i>
+                                    <span class="">
+                                                百度
+                                    </span>
+                                </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾 -->
+    <div class="footer">
+        <p>
+            <a href="#">
+                            我们关于
+                </a>
+            |
+            <a href="#">
+                            网站地图
+                </a>
+            |
+            <a href="#">
+                            诚聘英才
+                </a>
+            |
+            <a href="#">
+                            版权声明
+                </a>
+            |
+            <a href="#">
+                            联系我们
+                </a>
+            |
+            <a href="#">
+                            友情链接
+                </a>
+            |
+            <a href="#">
+                            CCTV6广告招商
+                </a>
+        </p>
+        <p>
+            国家广播电影总局电影卫星频道节目制作中心版权所有
+        </p>
+    </div>
+</body>
+</html>

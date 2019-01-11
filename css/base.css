@@ -1,0 +1,184 @@
+/*css 初始化 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+    /*清除元素的内外边距*/
+}
+
+fieldset,
+img,
+input,
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+    /*外面环绕线*/
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*去掉原样式中的小黑点*/
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+    /*字体的自动识别*/
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+/*输入字居中显示*/
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/**/
+
+textarea {
+    resize: none;
+    /*不可以随意拖动*/
+}
+
+/*防止拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+    /*  去掉图片底部默认的3像素空白缝隙*/
+}
+
+table {
+    border-collapse: collapse;
+    /*合并外连线*/
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    /*unitedCode的写法，宋体的写法*/
+    color: #666;
+    /*150%基于当前字体尺寸的百分比行间距*/
+    background: #fff;
+}
+ 
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+
+    /*a 标签是不继承颜色 的*/
+    color:#333333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a:hover {
+    /*color: #fff;*/
+    color:#2267ad;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s,
+i,
+em {
+    /*一般是起装饰作用*/
+    font-style: normal;
+    /*去掉原有的样式*/
+    text-decoration: none;
+    /*去掉下划线或是删除线*/
+}
+
+/*公共类*/
+
+.w {
+    /*版心 提取 */
+    width: 980px;
+    margin: 0 auto;
+}
+/*京东主色调 */
+
+.col-red {
+    color: #969696 !important;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.pr {
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+/*css初始化完成*/

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电影网_1905.com</title>
+    <meta content="电影|电影网|最新电影|好看的电影|在线观看|在线电影|电影推荐|免费电影|CCTV6|1905|电影频道官方网站" name="keywords" />
+    <meta content="国家新闻出版广电总局直属媒体-1905电影网（电影频道官方网站），涵盖最新电影、好看的电影、经典电影、电影推荐、免费电影、高清电影在线观看及海量最新电影图文视频资讯，看电影就上电影网1905.com。"
+        name="description" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery-1.12.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body class="straitpage">
+    <!-- 头部 -->
+    <header id="header">
+        <div class="head" style="width: 1349px;">
+            <div class="head-bar">
+                <div class="head-bar-logo">
+                    <a title="CCTV6">
+                            <span class="icon-home i-cctv6">
+                                CCTV6
+                            </span>
+                        </a>
+                    <a title="1905电影网">
+                            <span class="icon-home i-1905" style="background-image: url(./images/homeico.png)">
+                                1905电影网
+                            </span>
+                        </a>
+                </div>
+                <ul class="nav-bar-menu">
+                    <li class="home-page">
+                        <a class="nav-bar-active" title="首页" style="line-height: 70px; cursor: pointer">
+                                首页
+                            </a>
+                    </li>
+                    <li class="news-and-comment">
+                        <div>
+                            <a title="新闻" style="line-height: 70px; cursor: pointer">
+                                    新闻
+                                </a>
+                            <span class="news-and-comment-dotted">
+                                    ·
+                                </span>
+                            <a title="评论" style="line-height: 70px; cursor: pointer">
+                                    评论
+                                </a>
+                        </div>
+                    </li>
+                    <li class="exclusive">
+                        <a class="exclusive-hook" style="cursor: pointer" id="dj">
+                                独家栏目
+                            </a>
+                    <!-- todo -->
+                        <div class="exclusive-content" style="display: none;">
+                            <ul>
+                                <li>
+                                    <a alt="中国电影报道" data-hrefexp="fr=homepc_menu_cmt" href="#/moviereport/?fr=homepc_menu_cmt" target="">
+                                            中国电影报道
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="今日影评" data-hrefexp="fr=homepc_menu_cmt" href="#/mtalk/?fr=homepc_menu_cmt" target="">
+                                            今日影评
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="电影全解码" data-hrefexp="fr=homepc_menu_cmt" href="#/quanjiema/?fr=homepc_menu_cmt" target="">
+                                            电影全解码
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="周游电影" data-hrefexp="fr=homepc_menu_cmt" href="#/zydy/?fr=homepc_menu_cmt" target="">
+                                            周游电影
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="鹦鹉话外音" data-hrefexp="fr=homepc_menu_cmt" href="#/ywhwy/?fr=homepc_menu_cmt" target="">
+                                            鹦鹉话外音
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="秒懂电影" data-hrefexp="fr=homepc_menu_cmt" href="#/mmdy/?fr=homepc_menu_cmt" target="">
+                                            秒懂电影
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="新片约吗" data-hrefexp="fr=homepc_menu_cmt" href="#/xpym/?fr=homepc_menu_cmt" target="">
+                                            新片约吗
+                                        </a>
+                                </li>
+                                <li>
+                                    <a alt="up！新力量" data-hrefexp="fr=homepc_menu_cmt" href="#/uxll/?fr=homepc_menu_cmt" target="">
+                                            up！新力量
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="vod-movie">
+                        <a title="大片" style="line-height: 70px; cursor: pointer" id="dp">
+                                大片
+                            </a>
+                    </li>
+                    <li class="video-movie">
+                        <a title="VIP影院" style="line-height: 70px;" id="vip">
+                                VIP影院
+                            </a>
+                    </li>
+                    <li class="database">
+                        <a title="资料馆" style="line-height: 70px;" id="zl">
+                                资料馆
+                            </a>
+                    </li>
+                </ul>
+                <div class="nav-bar-seach" style="background: rgb(47, 51, 63);">
+                    <div class="bar-seach-form">
+                            <input autocomplete="off" class="bar-seach-txt" name="q" style="background: rgb(47, 51, 63);" type="text" id="xhs" placeholder="西虹市首富">
+                            </input>
+                            <input class="icon-home i-search bar-seach-btn" type="submit" value="" style="background-image: url(./images/homeico.png);background-position: -170px -149px;background-repeat:  no-repeat;">
+                            </input>
+                    </div>
+                    <!-- todo -->
+                    <div class="bar-seach-plane" style="display: none;" id="xh">
+                        <ul>
+                            <li>
+                                <a>
+                                        西虹市首富
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        影
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        暮光·巴黎
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        欧洲攻略
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        动物世界
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        巨额来电
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        我是你妈
+                                    </a>
+                            </li>
+                            <li>
+                                <a>
+                                        血十三
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-bar-user">
+                    <div class="bar-user-login">
+                        <div class="user-login-reg" >
+                            <a data-hrefexp="fr=homepc_menu_login" href="login.html" target="">
+                                    <i class="icon-home i-profile" style="background-image: url(./images/homeico.png);background-position: -67px -145px;background-repeat:  no-repeat;">
+                                    </i>
+                                    <br>
+                                        <span class="user-login-span">
+                                            登录
+                                        </span>
+                                    </br>
+                                </a>
+                        </div>
+                        <div class="user-login-img" style="display: none;">
+                        </div>
+                        <div class="user-login-plane" style="display: none;">
+                            <i class="arrow-up login-plane-position">
+                                </i>
+                            <div class="login-plane-winterVip" id="loginPlaneWinterVip">
+                                <div class="plane-winterVip-infoBox">
+                                    <p class="winterVip-infoBox-title">
+                                        <i class="icon-home i-crown">
+                                            </i>
+                                    </p>
+                                    <p class="winterVip-infoBox-term">
+                                        会员有效期：
+                                        <span>
+                                            </span>
+                                    </p>
+                                    <p>
+                                        <a href="#" target="">
+                                                <button class="login-renewal-btn" type="button">
+                                                    续费
+                                                </button>
+                                            </a>
+                                    </p>
+                                </div>
+                                <span class="loginOutBtn">
+                                        退出
+                                    </span>
+                            </div>
+                            <div class="login-plane-winterUnvip" id="loginPlaneWinterUnvip">
+                                <div class="plane-winterVip-infoBox">
+                                    <p class="winterVip-infoBox-title">
+                                        <i class="icon-home i-crownGray">
+                                            </i>
+                                    </p>
+                                    <p>
+                                        立即开通VIP 大片随意看
+                                    </p>
+                                    <p>
+                                        <a href="#" target="">
+                                                <button class="login-renewal-btn" type="button">
+                                                    开通
+                                                </button>
+                                            </a>
+                                    </p>
+                                </div>
+                                <span class="loginOutBtn">
+                                        退出
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-user-history">
+                        <i class="icon-home i-history">
+                            </i>
+                        <br>
+                        <span class="user-history-span">
+                                    观看记录
+                                </span>
+                        <div class="user-history-plane" style="display: none;">
+                            <i class="arrow-up history-plane-position">
+                                    </i>
+                            <ul class="history-plane-list" style="display: none;">
+                            </ul>
+                            <div class="history-plane-empty" id="historyPlaneUnlogin" style="display: none;">
+                                <i class="icon-home i-history-empty">
+                                        </i>
+                                <p>
+                                    请登录查看您的观影记录
+                                </p>
+                                <a href="电影网 - 登录.html" target="">
+                                            <button class="history-empty-login" type="button">
+                                                登录
+                                            </button>
+                                        </a>
+                                <a href="#" target="">
+                                            <button class="history-empty-reg" type="button">
+                                                免费注册
+                                            </button>
+                                        </a>
+                            </div>
+                            <div class="history-plane-empty" id="historyPlaneEmpty" style="display: block;">
+                                <i class="icon-home i-history-empty">
+                                        </i>
+                                <p>
+                                    最近您还没有任何观影记录
+                                </p>
+                            </div>
+                        </div>
+                        </br>
+                    </div>
+                    <div class="bar-user-phone">
+                        <a href="#" target="">
+                                <i class="icon-home i-phone">
+                                </i>
+                                <br>
+                                    <span class="user-history-span">
+                                        客户端
+                                    </span>
+                                </br>
+                            </a>
+                        <div class="user-phone-plane" style="display: none;">
+                            <div class="phone-plane-left">
+                                <i class="arrow-up phone-plane-position">
+                                    </i>
+                                <img height="117" src="./电影网_1905.com_files/erweima.png" width="117">
+                                <p style="font-size:17px; color:#000;margin-top: 18px;margin-bottom: 10px;">
+                                    扫描下载客户端
+                                </p>
+                                <p style="font-size:14px; color:#666;margin:0;padding:0;">
+                                    更多好电影 手机随时看
+                                </p>
+                                </img>
+                            </div>
+                            <div class="phone-plane-right">
+                                <a href="#/tvapp/" style="display:inline-block; width:116px;height:115px;" target="">
+                                        <img height="115" src="./电影网_1905.com_files/TvLogo1905.png" width="116"/>
+                                    </a>
+                                <p style="font-size:17px;margin-top:18px;margin-bottom: 10px;">
+                                    <a href="#" style="display:inline-block; color:#000;" target="">
+                                            1905TV端
+                                        </a>
+                                </p>
+                                <p style="font-size:14px; color:#666;margin:0;padding:0; white-space:nowrap">
+                                    大屏体验更美好
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 轮播图 -->
+    <div id="carousel" class="wrap slider">
+        <ul class="slider-ul">
+            <li class="img-show"><a href="http://www.1905.com/video/play/1341580.shtml?fr=homepc_lbt_01"  target=_blank title="周游电影 演而优则导的惨剧"><img src="./images/lb1.jpg" alt="" /></a></li>
+            <li><a href="http://www.1905.com/news/20190108/1341356.shtml?fr=homepc_lbt_02"  target=_blank title="2019年142部新片 全网最全华语片单"><img src="./images/lb2.jpg" alt="" /></a></li>
+            <li><a href="http://www.1905.com/video/play/1340116.shtml?fr=homepc_lbt_03"  target=_blank title="《来电狂响》 对话乔杉&霍思燕"><img src="./images/lb3.jpg" alt="" /></a></li>
+            <li><a href="http://www.1905.com/news/20190103/1339877.shtml?fr=homepc_lbt_04"  target=_blank title="《小猪佩奇过大年》 电影诞生记"><img src="./images/lb4.jpg" alt="" /></a></li>
+            <li><a href="http://www.1905.com/news/20190102/1339770.shtml?fr=homepc_lbt_05"  target=_blank title="《地球最后的夜晚》 “一吻跨年”错了吗？"><img src="./images/lb5.jpg" alt="" /></a></li>
+            <li><a href="http://vip.1905.com/play/1334884.shtml?fr=homepc_lbt_06"  target=_blank title="西虹市首富 开心麻花特笑大片"><img src="./images/lb6.jpg" alt="" /></a></li>
+            <li><a href="http://vip.1905.com/play/1334236.shtml?fr=homepc_lbt_07"  target=_blank title="猛虫过江 小沈阳闯台湾黑帮"><img src="./images/lb7.jpg" alt="" /></a></li>
+        </ul>
+        <div class="arrow">
+            <span class="arrow-l"><</span> 
+            <span class="arrow-r">></span>
+        </div>
+        <div class="circle">
+            <ul>
+                <li class="current">
+                    <a href="http://www.1905.com/video/play/1341580.shtml?fr=homepc_lbt_01"  target=_blank>
+                        <p>周游电影</p>
+                        <p>演而优则导的惨剧</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.1905.com/news/20190108/1341356.shtml?fr=homepc_lbt_02"  target=_blank>
+                        <p>2019年142部新片</p>
+                        <p>全网最全华语片单</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.1905.com/video/play/1340116.shtml?fr=homepc_lbt_03"  target=_blank>
+                        <p>《来电狂响》</p>
+                        <p>对话乔杉&霍思燕</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.1905.com/news/20190103/1339877.shtml?fr=homepc_lbt_04"  target=_blank>
+                        <p>《小猪佩奇过大年》</p>
+                        <p>电影诞生记</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.1905.com/news/20190102/1339770.shtml?fr=homepc_lbt_05"  target=_blank>
+                        <p>《地球最后的夜晚》</p>
+                        <p>“一吻跨年”错了吗？</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vip.1905.com/play/1334884.shtml?fr=homepc_lbt_06"  target=_blank>
+                        <p>西虹市首富</p>
+                        <p>开心麻花特笑大片</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vip.1905.com/play/1334236.shtml?fr=homepc_lbt_07"  target=_blank>
+                        <p>猛虫过江</p>
+                        <p>小沈阳闯台湾黑帮</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 新闻 -->
+    <div id="news" class="w">
+        <div id="news_left">
+            <!-- 新闻标题 -->
+            <div class="news_title">
+                <span class="yaowen">要闻</span>
+            </div>
+
+            <!-- 新闻 -->
+            <div class="news_special">
+                <h5 class="news_special_title"><a href="#"></a></h5>
+                <a href="#"><img src="" title=""></a>
+                <p class="news_special_p"></p>
+                <div class="news_special_date"><i class="i_time"></i><span></span></div>
+            </div>
+
+            <!-- 新闻列表 -->
+            <ul class="news_special_list">
+                <li><a href="#">
+                        <span></span>
+                        <h6></h6>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span></span>
+                        <h6></h6>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span></span>
+                        <h6></h6>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span>焦点</span>
+                        <h6>光明日报：国产电影强势崛起竞争力不断增强</h6>
+                    </a>
+                </li>
+                <li style="border: none;"><a href="#">
+                        <span>焦点</span>
+                        <h6>央视网：感受习主席六次新年贺词里的改革开放</h6>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="news_middle">
+            <!-- 快讯 -->
+            <div class="quick_news_title">
+                <span class="kuaixun">快讯</span>
+            </div>
+            <h5 class="title-fastFocus">
+                <a href="http://www.1905.com/news/20190108/1341626.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h5>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341833.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341795.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341659.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+
+            <h5 class="title-fastFocus">
+                <a href="http://www.1905.com/news/20190108/1341611.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h5>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341686.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341690.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341692.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+            <h5 class="title-fastFocus">
+                <a href="http://www.1905.com/news/20190109/1341960.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h5>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341989.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341972.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx">A</a>
+            </h6>
+            <h6 class="title-fast">
+
+                <a href="http://www.1905.com/news/20190109/1341853.shtml?fr=homepc_news_kx" target="_blank"
+                    data-hrefexp="fr=homepc_news_kx"></a>
+            </h6>
+        </div>
+
+        <div id="news_right">
+            <div class="deepth_title">
+                <span class="shendu">深度</span>
+            </div>
+            <ul id="deepth_figure">
+                <li class="deepth_figure_item">
+                    <a href="#">
+                        <img src="" title="">
+                    </a>
+                    <a href="#" class="item_p"></a>
+                </li>
+                <li class="deepth_figure_item">
+                    <a href="#">
+                        <img src="images/thumb_1_176_110_20190104054946772857.jpg" title="马丽：不要撕我这些标签！">
+                    </a>
+                    <a href="#" class="item_p">马丽：不要撕我这些标签！</a>
+                </li>
+                <li class="deepth_figure_item">
+                    <a href="#">
+                        <img src="images/thumb_1_176_110_20181229080722485394.jpg" title="那些被定格在2018年的电影">
+                    </a>
+                    <a href="#" class="item_p">那些被定格在2018年的电影</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="news_more">
+            <a href="#" id="news_more_btn">更多新闻</a>
+        </div>
+    </div>
+    <!-- 电影评论 -->
+    <div id="movieComment">
+        <div class="movieComment_title">
+            <h1>电影评论</h1>
+        </div>
+        <div class="w clearfix">
+            <div class="movieComment-conts-item fl">
+                <div class="conts-item-play">
+                    <a href="http://www.1905.com/video/play/1341894.shtml?fr=homepc_comment_01" target="_blank">
+                        <img src="./images/jryp.jpg" alt=""
+                             width="460" height="240">
+                        <h2>播放图标</h2>
+                    </a>
+                </div>
+                <div class="conts-item-top">
+                    <a href="http://www.1905.com/mtalk/?fr=cmt_rcm" target="_blank">今日影评</a>
+                    <span><em>CCTV6</em> 周一至周五每日播出</span>
+                </div>
+                <div class="conts-item-mid">
+                    <a href="http://www.1905.com/video/play/1341894.shtml?fr=homepc_comment_01" target="_blank">葛优新尝试跑偏
+                        小岳岳醉酒卖海豚莫名其妙</a>
+                </div>
+                <div class="conts-item-mid-bot">
+                    <span class="bot-conts-quote"></span>
+                    <em>本期《今日影评》特邀影评人图宾根木匠，为您解析《断片之险途夺宝》：与您一起探讨“三个男人一台戏”的背...</em>
+                </div>
+            </div>
+            <div class="movieComment-conts-mid fl">
+                <ul>
+                    <li>
+                        <a href="http://www.1905.com/news/20190109/1341846.shtml?fr=homepc_comment_02" target="_blank"><img
+                                src="./images/sgct.jpg" alt="" width="190px" height="105px"></a>
+                        <div class="news">
+                            <a href="http://www.1905.com/news/20190109/1341846.shtml?fr=homepc_comment_02" target="_blank">排片逆袭,豆瓣8.9
+                                《四个春天》到底有什么魅力？</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.1905.com/news/20181228/1338883.shtml?fr=homepc_comment_03" target="_blank"><img
+                                src="./images/ldkx.jpg" alt="" width="190px" height="105px"></a>
+                        <div class="news">
+                            <a href="http://www.1905.com/news/20181228/1338883.shtml?fr=homepc_comment_03" target="_blank">《来电狂响》的本土化，是真心话还是大冒险？</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.1905.com/news/20181224/1337196.shtml?fr=homepc_comment_04" target="_blank"><img
+                                src="./images/xmgj.jpg" alt="" width="190px" height="105px"></a>
+                        <div class="news">
+                            <a href="http://www.1905.com/news/20181224/1337196.shtml?fr=homepc_comment_04" target="_blank">欠下巨额债务关闭140家影院，星美到底怎么了？</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="movieComment-conts-rig">
+                <a href="http://www.1905.com/news/20181223/1337043.shtml?fr=homepc_comment_05" target="_blank"><img
+                        src="./images/gcw.jpg"
+                        alt=""></a>
+                <div class="conts-rig-bot fr">
+                    <a href="http://www.1905.com/news/20181223/1337043.shtml?fr=homepc_comment_05" target="_blank">肖央：到电影院来希望能开心</a>
+                    <div class="conts-item-rig-bot">
+                        <span class="bot-conts-quote"></span>
+                        <em>说到广场舞，大家想到最多的还是2014年的《小苹果》。后来，这首歌和另一首洗脑...</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movieComment_more">
+            <a href="http://www.1905.com/pinglun/?fr=homepc_comment_more" target="_blank"><span>查看更多</span></a>
+        </div>
+    </div>
+    <!-- 新片动态 -->
+    <div id="trends">
+        <div class="w wrap clearfix pr">
+            <p>新片动态</p>
+            <div class="trendsLeft  fl" id="trendsLeft">
+                <ul id="container" class="clearfix ">
+                    <!--<li>-->
+                        <!--<a href="#">-->
+                            <!--<img src="images/thumb_1_320_174_20190109100443982831.jpg" alt="" id="trendsImg">-->
+                        <!--</a>-->
+                        <!--<span id="trendsOn"></span>-->
+                        <!--<span id="trendsTime">01:13</span>-->
+                        <!--<a href="#" id="trendsTitle">《白蛇：缘起》曝光原片片段</a>-->
+                    <!--</li>-->
+    
+                </ul>
+            </div>
+            <div class="trendsR fr">
+                <span class="trendsRight">《海上浮城》海报 李淳邬君梅神态各异</span>
+                <ul class="RightOne clearfix">
+                    <!--<li><a href="#">《沉默的雪》公映 “悬疑版” 海报展现危险氛围</a></li>-->
+                </ul>
+                <span class="trendsRight trendsTwo">《毒液》续集新动态原版编剧确定回归</span>
+                <ul class="RightTwo clearfix">
+                    <!--<li><a href="#">《沉默的雪》公映 “悬疑版” 海报展现危险氛围</a></li>-->
+                </ul>
+            </div>
+            <div class="trendsMore">
+                <span><a href="javascript:;">查看更多</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- 热播大片+友链 -->
+    <div id="hot" class="w wrap hot">
+        <!-- <div class="w"> -->
+            <div class="hot-title">
+                <h2>热播大片</h2>
+            </div>
+            <div class="frame-hot clearfix">
+                <ul>
+                    <!--<li>
+                        <div class="frame-room pr">
+                            <a href="#" target="_blank">
+                                <img src="images/thumb_1_180_252_20181222034607684277.jpg" alt="" title="黄金兄弟">
+                                <span class="hot-score">6.3</span>
+                                <span class="hot-free">全网热播</span>
+                            </a>
+                        </div>
+                        <p class="title-hot"><a href="" target="_blank">黄金兄弟</a></p>
+                        <p class="content-hot">古惑仔江湖再聚首</p>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="more">
+                <a href="" target="_blank">更多VIP电影</a>
+                <a href="" target="_blank">更多免费电影</a>
+            </div>
+            <div class="link">
+                <h6>友情链接</h6>
+                <p>
+                    <a href="" target="_blank">人民网</a>
+                    <a href="" target="_blank">新华网</a>
+                    <a href="" target="_blank">中国网</a>
+                    <a href="" target="_blank">央广网</a>
+                    <a href="" target="_blank">法制网</a>
+                    <a href="" target="_blank">科技部</a>
+                    <a href="" target="_blank">光明网</a>
+                    <a href="" target="_blank">搜狐新闻</a>
+                    <a href="" target="_blank">网易新闻</a>
+                    <a href="" target="_blank">腾讯新闻</a>
+                </p>
+            </div>
+        <!-- </div> -->
+    </div>
+    <!-- footer -->
+    <footer class="footer" style="width: 1349px;">
+        <div class="footer-inner">
+            <h3 class="homeico footer-inner-logo">
+                </h3>
+            <p class="footer-inner-links">
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        关于我们
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        网站地图
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        诚聘英才
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        版权声明
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        联系我们
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        帮助与反馈
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        友情链接
+                    </a>
+                <span>
+                        |
+                    </span>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        CCTV6广告招商
+                    </a>
+                <a href="javascript:void(0">
+                        合作媒体
+                    </a>
+            </p>
+            <div class="footer-inner-bottom">
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        网络视听许可证0107199号
+                    </a>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        京网文[2016]6480-878号
+                    </a>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        出版物经营许可证
+                    </a>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                        电影发行许可证
+                    </a>
+                <a data-hrefexp="fr=homepc_bottom" href="# target="">
+                        经营性演出许可证
+                    </a>
+                <br>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                            企业法人营业执照
+                        </a>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                            增值电信业务经营许可证
+                        </a>
+                <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                            京ICP备12022675号-3
+                        </a>
+                <a href="#2000300" target="">
+                            京公网安备 11010202000300号
+                        </a>
+                </br>
+            </div>
+        </div>
+    </footer>
+    <!-- copy -->
+    <div class="copy-right">
+        <div class="copy-right-conts clearfix">
+            <div class="right-conts-left fl">
+                <span>
+                        CopyRight © 2017
+                    </span>
+                <em>
+                        电影卫星频道节目中心官方网站
+                    </em>
+                <em class="conts-left-margin">
+                        |
+                    </em>
+                <em>
+                        <a data-hrefexp="fr=homepc_bottom" href="#" target="">
+                            京ICP证100935
+                        </a>
+                    </em>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
